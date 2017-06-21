@@ -1,0 +1,30 @@
+001
+   echo "# meanapp" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git remote add origin https://github.com/cosmin199/meanapp.git
+  git push -u origin master
+
+  git add .
+  git branch
+  git commit -m "server-setup_001"
+  git status
+  git push --all origin
+
+  git branch
+  git checkout master
+  git merge server-setup_001
+  git status
+  git push
+
+
+002
+  git clone https://github.com/cosmin199/meanapp.git
+  cd src
+  cd app
+  mkdir components
+  cd components
+  ng g component navbar
+  ng g component home
+  ng g component dashboard
